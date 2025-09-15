@@ -71,6 +71,7 @@ const swiper3 = new Swiper('.swiper3', {
       loop: true,
       slidesPerView: 2,
       grid: { rows: 2, },
+      
     },
     768: {   
       loop: true,
@@ -85,6 +86,7 @@ const swiper3 = new Swiper('.swiper3', {
       grid: {rows:1, fill: 'row'}, // явно ставим 1 строку
     },
   },
+  
 });
 
 

@@ -508,7 +508,8 @@ body {
   flex-direction: column;
   width: 270px;
   height: 436px;
-  background-color: #ffffff
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 113.1px), calc(100% - 10px) calc(100% - 88.1px), 100% calc(100% - 63.1px), 100% 100%, 0 100%);
 }
 
 @media (max-width: 1199.98px) { 
@@ -1208,15 +1209,13 @@ body {
 @media (max-width: 767.98px) { 
   .swiper3 {
     width: 100%;
-    height: auto;
+    height: 233px;
+    .swiper3-wrapper{
+      height: 233px;
+      margin-left: 0px;
+}
   }
 } 
-
-/* .swiper3-wrapper{
-  height: auto;
-  margin-left: 0px;
-} */
-
 
 .swiper3-slide {
   width: 400px;
@@ -1255,10 +1254,10 @@ body {
 }
 
 .swiper3-scrollbar {
-
   background: #E0E0E0;   /* цвет трека */
   height: 10px;          /* толщина полосы */
   border-radius: 0;    /* скругление */
+  margin-bottom: -20px;
 }
 
 
@@ -1394,10 +1393,16 @@ body {
 }
 
 .projects__card img {
-  max-width: 109.38px;
+  max-width: 236px;
   height: auto;
 }
 
+@media (max-width: 767.98px) { 
+  .projects__card img {
+    max-width: 109.38px;
+    height: auto;
+  }
+}
 
 
 /* Футер*/
