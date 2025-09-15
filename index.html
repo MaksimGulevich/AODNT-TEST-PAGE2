@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/main.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link v type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АОДНТ</title>
+  </head>
+  <body class="bg-light">
+    <header class="header mb-4">
+      <nav class="container-fluid m-0 p-0">
+        <div class="row no-gutters header__address no-gutters flex-nowrap border-bottom justify-content-between mb-4">
+            <div class="col-auto d-flex align-items-center">
+              <button type="button" class="custom-burger btn btn-outline-secondary mr-3 d-block d-md-none" aria-label="Меню">
+                <span class="custom-burger__icon" aria-hidden="true"></span>
+              </button>
+              <address class="mb-0 address d-flex flex-nowrap">
+                <span class="mr-5 address__geo text-nowrap d-none d-md-block">
+                  <i class="bi bi-geo-alt"></i> 
+                  г. Благовещенск, ул. Ленина, 167
+                </span>
+                <a class="mr-auto mr-md-5 text-dark address__tel text-nowrap" href="tel:+74162777806">
+                  <i class="bi bi-telephone"></i> 8(4162) 77 78 06
+                </a>
+                <a class="text-dark mr-4 text-nowrap d-none d-md-block" href="mailto:aodnt@yandex.ru">aodnt@yandex.ru</a>
+              </address>
+            </div>
+            <div class="d-flex col-auto">
+              <div class="address__eye mr-3 d-flex align-items-center justify-content-center">
+                <img src="/public/eye 1.svg">
+              </div>
+              <div class="address__search d-flex align-items-center justify-content-center">
+                <img src="/public/Vector.svg">
+              </div>
+            </div>
+        </div>
+
+        <!--ВТОРАЯ СТРОКА НАВИГАЦИИ-->
+        <div class="row no-gutters menu flex-nowrap no-gutters justify-content-between">
+          
+           <!--Меню и лого-->
+          <div class="menu__bar d-flex col align-items-center mr-3">
+            <button type="button" class="custom-burger btn btn-outline-secondary mr-2 d-none d-md-block" aria-label="Меню">
+              <span class="custom-burger__icon" aria-hidden="true"></span>
+            </button>
+            <a class="d-flex text-decoration-none" aria-label="Логотип АОДНТ" href="/">
+              <div class="menu__bar-left d-flex align-items-center">
+                <svg width="106" height="24" viewBox="0 0 106 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.0633 19.7944C11.416 19.7944 13.3797 19.0216 14.9595 17.4807H15.0762L15.8491 19.3327H19.5871V0.82736H15.8491L15.0762 2.67935H14.9595C13.3797 1.13846 11.4111 0.36558 9.0633 0.36558C6.44329 0.36558 4.28507 1.25026 2.62752 3.06336C0.969968 4.87646 0.158203 7.19023 0.158203 10.0776C0.158203 15.7891 3.81843 19.7944 9.0633 19.7944ZM9.98686 14.3211C7.67309 14.3211 6.1322 12.5858 6.1322 10.0824C6.1322 7.61312 7.67309 5.84377 9.98686 5.84377C12.2617 5.84377 13.7638 7.69576 13.7638 9.85398V10.3158C13.7638 12.474 12.2617 14.3211 9.98686 14.3211ZM32.7697 19.7944C35.623 19.7944 37.9757 18.8709 39.7839 16.98C41.597 15.0891 42.5206 12.8142 42.5206 10.0776C42.5206 7.34091 41.597 5.06603 39.7839 3.17516C37.9708 1.28428 35.6182 0.360718 32.7308 0.360718C29.8775 0.360718 27.5248 1.28428 25.7166 3.17516C23.9035 5.06603 22.9799 7.34091 22.9799 10.0776C22.8633 15.3613 27.0631 19.8722 32.7697 19.7944ZM32.7697 14.2044C30.5726 14.2044 28.9539 12.4302 28.9539 10.0776C28.9539 7.72492 30.5726 5.95071 32.7697 5.95071C34.9668 5.95071 36.5855 7.72492 36.5855 10.0776C36.5855 12.4351 34.9668 14.2044 32.7697 14.2044ZM63.7626 1.0218H47.955V5.72711C47.955 8.11865 47.9162 9.89286 47.7995 11.0838C47.6828 12.2795 47.4155 13.3975 46.9877 14.4767H43.9059V23.688H48.7619V19.3327H60.4426V23.688H65.2986V14.4767H63.7577V1.0218H63.7626ZM58.0997 5.91668V14.4767H52.7041C53.1659 12.9747 53.4381 10.9282 53.477 9.34845C53.5159 8.53669 53.5159 7.41869 53.5159 5.91668H58.0997ZM80.5325 7.65201H75.0981V0.82736H69.0852V19.3327H75.0981V12.508H80.5325V19.3327H86.5843V0.82736H80.5325V7.65201ZM89.5543 0.82736V5.91668H94.6825V19.3327H100.734V5.91668H105.901V0.82736H89.5543Z" fill="white"></path>
+                </svg>
+              </div>
+              <div class="menu__bar-right d-flex align-items-center">
+                <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.91344 4.49811V3.3947C3.91344 2.46141 3.3593 2.04338 2.48921 2.04338C1.9934 2.04338 1.55107 2.1649 1.30802 2.24753V2.87945C1.58509 2.75792 1.96423 2.64126 2.42115 2.64126C2.94612 2.64126 3.23292 2.91347 3.23292 3.29748V3.40442C2.98988 3.35095 2.69337 3.31206 2.43088 3.31206C1.78925 3.31206 1.05525 3.5551 1.05525 4.34742C1.05525 4.9842 1.57536 5.29043 2.13436 5.29043C2.61558 5.29043 2.99474 5.13488 3.29611 4.89184C3.40305 5.14461 3.63151 5.25154 3.91344 5.25154C4.06898 5.25154 4.21967 5.22724 4.35091 5.17377V4.67796C4.28772 4.69741 4.21482 4.71685 4.14676 4.71685C4.01552 4.72171 3.91344 4.6731 3.91344 4.49811ZM2.55727 3.79815C2.77601 3.79815 3.03849 3.83703 3.2232 3.87592V4.39603C2.98016 4.63908 2.65934 4.7606 2.32881 4.7606C2.02257 4.7606 1.75036 4.60505 1.75036 4.30368C1.75522 3.91967 2.16354 3.79815 2.55727 3.79815ZM5.52725 5.21266V3.12249L6.40219 4.47381H6.81537L7.69519 3.12249V5.21266H8.35627V2.13087H7.66117L6.60636 3.7544L5.56128 2.13087H4.86618V5.21266H5.52725ZM10.602 4.45436L9.56175 2.13087H8.82777L10.2909 5.24182L10.2277 5.39737C10.0479 5.87859 9.79508 6.11678 9.46455 6.11678C9.36247 6.11678 9.25067 6.1022 9.14859 6.07303V6.65633C9.2847 6.69036 9.42079 6.7098 9.55204 6.7098C10.0187 6.7098 10.4562 6.43759 10.7916 5.63555L12.2352 2.13573H11.5158L10.602 4.45436ZM13.363 2.6121V2.13087H12.7505V6.62717H13.4359V4.81407C13.6497 5.05711 14.0094 5.29529 14.549 5.29529C15.4726 5.29529 16.0802 4.55644 16.0802 3.67176C16.0802 2.78709 15.4774 2.04824 14.549 2.04824C13.9754 2.04338 13.606 2.31558 13.363 2.6121ZM15.3802 3.67176C15.3802 4.27451 14.9816 4.69255 14.4226 4.69255C13.9462 4.69255 13.5866 4.38631 13.4407 4.04605V3.29262C13.5866 2.95722 13.9462 2.65098 14.4226 2.65098C14.9816 2.64612 15.3802 3.06416 15.3802 3.67176ZM16.5565 3.69607C16.5565 4.79462 17.3975 5.29529 18.2189 5.29529C18.6127 5.29529 18.9432 5.22238 19.2397 5.08141V4.44464C18.9967 4.58561 18.6661 4.68282 18.3405 4.68282C17.7863 4.68282 17.2565 4.36687 17.2565 3.6669C17.2565 2.94264 17.8106 2.65098 18.3551 2.65098C18.671 2.65098 18.987 2.7482 19.2106 2.90861V2.2767C18.9384 2.11629 18.6078 2.03852 18.2578 2.03852C17.4364 2.04338 16.5565 2.54404 16.5565 3.69607ZM20.6154 5.21266V3.93425H21.1112L22.1271 5.21266H22.9194L21.6799 3.65718L22.7979 2.12601H22.0153L21.1306 3.34609H20.6251V2.12601H19.9397V5.2078H20.6154V5.21266ZM23.9548 5.21266L25.6075 3.1954V5.21266H26.2928V2.13087H25.6998L24.0471 4.14813V2.13087H23.3617V5.21266H23.9548ZM29.5593 1.43577V0.87677C29.2337 1.08093 28.942 1.14898 28.6212 1.14898C28.3004 1.14898 28.0087 1.08579 27.683 0.87677V1.43577C27.965 1.6302 28.2761 1.69826 28.6212 1.69826C28.9663 1.69826 29.2774 1.62534 29.5593 1.43577ZM27.7462 5.21266L29.3989 3.1954V5.21266H30.0843V2.13087H29.4913L27.8386 4.14813V2.13087H27.1581V5.21266H27.7462ZM1.09414 10.7395C1.09414 11.804 1.90591 12.363 2.76628 12.363C3.63151 12.363 4.43842 11.804 4.43842 10.7395C4.43842 9.67493 3.63637 9.11593 2.76628 9.11593C1.90105 9.11107 1.09414 9.67007 1.09414 10.7395ZM3.73359 10.7395C3.73359 11.3422 3.335 11.7359 2.76141 11.7359C2.18297 11.7359 1.78438 11.3422 1.78438 10.7395C1.78438 10.1367 2.18297 9.74298 2.76141 9.74298C3.335 9.74298 3.73359 10.1318 3.73359 10.7395ZM8.18614 10.8464C8.18614 9.91311 7.5202 9.34925 6.74246 9.34925C6.2661 9.34925 5.86751 9.58257 5.66335 9.8888C5.75571 9.53396 5.92584 9.13537 6.31957 8.91177C6.97578 8.54721 7.48131 8.69303 7.91393 8.36735V7.70142C7.47645 8.13403 6.80079 7.89585 5.91611 8.44027C5.36197 8.78539 4.96338 9.46591 4.96338 10.5353C4.96338 11.7748 5.66336 12.3678 6.58206 12.3678C7.51048 12.363 8.18614 11.8234 8.18614 10.8464ZM5.65363 10.861C5.65363 10.4284 5.97445 9.94713 6.56748 9.94713C7.18481 9.94713 7.48617 10.3846 7.48617 10.861C7.48617 11.3373 7.18481 11.7748 6.56748 11.7748C5.96959 11.77 5.65363 11.3325 5.65363 10.861ZM10.0333 9.78187H11.0735V12.2803H11.7589V9.19856H9.3819C9.32357 10.7297 9.18262 11.7554 8.66251 11.7554C8.59932 11.7554 8.53612 11.7408 8.46321 11.7165V12.256C8.61876 12.3144 8.75972 12.3387 8.8861 12.3387C9.71245 12.3387 9.94576 11.2693 10.0333 9.78187ZM15.2538 11.5658V10.4624C15.2538 9.5291 14.6997 9.11107 13.8296 9.11107C13.3338 9.11107 12.8914 9.23259 12.6484 9.31522V9.94713C12.9255 9.82561 13.3046 9.70895 13.7615 9.70895C14.2865 9.70895 14.5733 9.9763 14.5733 10.3652V10.4721C14.3303 10.4186 14.0337 10.3798 13.7713 10.3798C13.1296 10.3798 12.3956 10.6228 12.3956 11.4151C12.3956 12.0519 12.9158 12.3581 13.4748 12.3581C13.956 12.3581 14.3351 12.2026 14.6365 11.9595C14.7434 12.2123 14.9719 12.3192 15.2538 12.3192C15.4094 12.3192 15.5601 12.2949 15.6913 12.2415V11.7457C15.6281 11.7651 15.5552 11.7845 15.4871 11.7845C15.3559 11.7894 15.2538 11.7408 15.2538 11.5658ZM13.8976 10.8658C14.1164 10.8658 14.3789 10.9047 14.5636 10.9436V11.4637C14.3205 11.7068 13.9997 11.8283 13.6692 11.8283C13.363 11.8283 13.0907 11.6727 13.0907 11.3714C13.0956 10.9874 13.5039 10.8658 13.8976 10.8658ZM16.0121 10.7638C16.0121 11.8623 16.853 12.363 17.6745 12.363C18.0683 12.363 18.3988 12.2901 18.6953 12.1491V11.5123C18.4523 11.6533 18.1217 11.7505 17.7961 11.7505C17.2419 11.7505 16.7121 11.4346 16.7121 10.7346C16.7121 10.0103 17.2662 9.71868 17.8106 9.71868C18.1266 9.71868 18.4426 9.81589 18.6662 9.9763V9.34439C18.3939 9.18398 18.0634 9.10621 17.7134 9.10621C16.8919 9.11107 16.0121 9.61174 16.0121 10.7638ZM20.8147 12.2803V9.80131H21.8743V9.19856H19.0599V9.80131H20.1244V12.2803H20.8147ZM23.1041 12.2803V11.0408H24.645V12.2803H25.3304V9.19856H24.645V10.4381H23.1041V9.19856H22.4187V12.2803H23.1041ZM26.0012 10.7395C26.0012 11.804 26.813 12.363 27.6733 12.363C28.5386 12.363 29.3455 11.804 29.3455 10.7395C29.3455 9.67493 28.5434 9.11593 27.6733 9.11593C26.8081 9.11107 26.0012 9.67007 26.0012 10.7395ZM28.6406 10.7395C28.6406 11.3422 28.242 11.7359 27.6685 11.7359C27.09 11.7359 26.6914 11.3422 26.6914 10.7395C26.6914 10.1367 27.09 9.74298 27.6685 9.74298C28.242 9.74298 28.6406 10.1318 28.6406 10.7395ZM32.4127 8.50346V7.94446C32.087 8.14862 31.7953 8.21667 31.4745 8.21667C31.1537 8.21667 30.8621 8.15348 30.5364 7.94446V8.50346C30.8183 8.69789 31.1294 8.76595 31.4745 8.76595C31.8196 8.76595 32.1307 8.69303 32.4127 8.50346ZM30.5996 12.2803L32.2523 10.2631V12.2803H32.9376V9.19856H32.3446L30.6919 11.2158V9.19856H30.0065V12.2803H30.5996ZM1.658 20.1744V19.3432H4.13705V20.1744H4.78353V18.7793H4.32661V16.2614H1.91563C1.93021 17.3356 1.79897 18.1182 1.42954 18.7793H1.00665V20.1744H1.658ZM2.56212 16.8301H3.63636V18.7842H2.15381C2.41143 18.2349 2.53781 17.6565 2.56212 16.8301ZM5.15782 17.8023C5.15782 18.8668 5.96958 19.4258 6.82995 19.4258C7.69519 19.4258 8.50209 18.8668 8.50209 17.8023C8.50209 16.7378 7.70005 16.1788 6.82995 16.1788C5.96958 16.1788 5.15782 16.7378 5.15782 17.8023ZM7.79727 17.8023C7.79727 18.405 7.39868 18.7988 6.8251 18.7988C6.24666 18.7988 5.84806 18.405 5.84806 17.8023C5.84806 17.1995 6.24666 16.8058 6.8251 16.8058C7.39868 16.8107 7.79727 17.1995 7.79727 17.8023ZM9.82911 19.348V17.2579L10.7041 18.6092H11.1172L11.997 17.2579V19.348H12.6581V16.2663H11.963L10.9082 17.8898L9.86314 16.2663H9.16803V19.348H9.82911ZM15.7205 19.348V18.1085H17.2614V19.348H17.9467V16.2663H17.2614V17.5058H15.7205V16.2663H15.0351V19.348H15.7205ZM21.4368 18.6335V17.5301C21.4368 16.5968 20.8827 16.1788 20.0126 16.1788C19.5168 16.1788 19.0745 16.3003 18.8314 16.3829V17.0148C19.1085 16.8933 19.4876 16.7766 19.9446 16.7766C20.4695 16.7766 20.7563 17.0488 20.7563 17.4329V17.5398C20.5133 17.4863 20.2168 17.4474 19.9543 17.4474C19.3126 17.4474 18.5787 17.6905 18.5787 18.4828C18.5787 19.1196 19.0988 19.4258 19.6578 19.4258C20.139 19.4258 20.5181 19.2703 20.8195 19.0272C20.9264 19.28 21.1549 19.3869 21.4368 19.3869C21.5924 19.3869 21.7431 19.3626 21.8743 19.3091V18.8133C21.8111 18.8328 21.7382 18.8522 21.6702 18.8522C21.5438 18.8571 21.4368 18.8085 21.4368 18.6335ZM20.0855 17.9335C20.3043 17.9335 20.5668 17.9724 20.7515 18.0113V18.5314C20.5084 18.7745 20.1876 18.896 19.8571 18.896C19.5508 18.896 19.2786 18.7404 19.2786 18.4391C19.2786 18.055 19.6918 17.9335 20.0855 17.9335ZM23.002 16.7426V16.2614H22.3896V20.7577H23.075V18.9446C23.2888 19.1876 23.6485 19.4258 24.1881 19.4258C25.1117 19.4258 25.7193 18.687 25.7193 17.8023C25.7193 16.9176 25.1165 16.1788 24.1881 16.1788C23.6097 16.1788 23.2451 16.451 23.002 16.7426ZM25.0193 17.8023C25.0193 18.405 24.6207 18.8231 24.0617 18.8231C23.5853 18.8231 23.2256 18.5168 23.0798 18.1766V17.4231C23.2256 17.0877 23.5853 16.7815 24.0617 16.7815C24.6207 16.7815 25.0193 17.1995 25.0193 17.8023ZM26.1908 17.8023C26.1908 18.8668 27.0025 19.4258 27.8629 19.4258C28.7281 19.4258 29.535 18.8668 29.535 17.8023C29.535 16.7378 28.733 16.1788 27.8629 16.1788C27.0025 16.1788 26.1908 16.7378 26.1908 17.8023ZM28.8351 17.8023C28.8351 18.405 28.4365 18.7988 27.8629 18.7988C27.2845 18.7988 26.8859 18.405 26.8859 17.8023C26.8859 17.1995 27.2845 16.8058 27.8629 16.8058C28.4365 16.8107 28.8351 17.1995 28.8351 17.8023ZM30.4975 20.1744V19.3432H32.9765V20.1744H33.623V18.7793H33.1661V16.2614H30.7551C30.7697 17.3356 30.6384 18.1182 30.269 18.7793H29.8461V20.1744H30.4975ZM31.4016 16.8301H32.4759V18.7842H30.9933C31.2509 18.2349 31.3773 17.6565 31.4016 16.8301ZM34.9452 19.348V18.1085H36.4861V19.348H37.1715V16.2663H36.4861V17.5058H34.9452V16.2663H34.2598V19.348H34.9452ZM37.8423 17.8023C37.8423 18.8668 38.654 19.4258 39.5144 19.4258C40.3796 19.4258 41.1865 18.8668 41.1865 17.8023C41.1865 16.7378 40.3845 16.1788 39.5144 16.1788C38.6492 16.1788 37.8423 16.7378 37.8423 17.8023ZM40.4817 17.8023C40.4817 18.405 40.0831 18.7988 39.5095 18.7988C38.9311 18.7988 38.5325 18.405 38.5325 17.8023C38.5325 17.1995 38.9311 16.8058 39.5095 16.8058C40.0831 16.8107 40.4817 17.1995 40.4817 17.8023ZM42.5378 19.348V16.869H44.1516V16.2663H41.8525V19.348H42.5378ZM44.4044 17.8023C44.4044 18.8668 45.2162 19.4258 46.0765 19.4258C46.9418 19.4258 47.7487 18.8668 47.7487 17.8023C47.7487 16.7378 46.9466 16.1788 46.0765 16.1788C45.2162 16.1788 44.4044 16.7378 44.4044 17.8023ZM47.0487 17.8023C47.0487 18.405 46.6501 18.7988 46.0765 18.7988C45.4981 18.7988 45.0995 18.405 45.0995 17.8023C45.0995 17.1995 45.4981 16.8058 46.0765 16.8058C46.6501 16.8107 47.0487 17.1995 47.0487 17.8023ZM2.71767 26.4109V23.9318H3.77733V23.3291H0.962891V23.9318H2.02742V26.4109H2.71767ZM6.12999 26.4109C6.84453 26.4109 7.14591 26.0366 7.14591 25.5651C7.14591 25.1859 6.90773 24.9429 6.62094 24.8505C6.88343 24.7339 7.05841 24.4908 7.05841 24.1506C7.05841 23.6693 6.70358 23.3291 6.08139 23.3291H4.32175V26.4109H6.12999ZM5.00228 25.1033H5.97445C6.21263 25.1033 6.45081 25.1859 6.45081 25.5019C6.45081 25.7984 6.24665 25.8956 5.96472 25.8956H5.00713V25.1033H5.00228ZM5.00228 23.8492H5.92097C6.13485 23.8492 6.35845 23.9415 6.35845 24.2429C6.35845 24.52 6.16402 24.6172 5.92097 24.6172H5.00228V23.8492ZM7.64657 24.87C7.64657 25.9345 8.45834 26.4935 9.31871 26.4935C10.1839 26.4935 10.9908 25.9345 10.9908 24.87C10.9908 23.8054 10.1888 23.2464 9.31871 23.2464C8.45348 23.2464 7.64657 23.8054 7.64657 24.87ZM10.286 24.87C10.286 25.4727 9.88744 25.8665 9.31386 25.8665C8.73542 25.8665 8.33682 25.4727 8.33682 24.87C8.33682 24.2672 8.73542 23.8735 9.31386 23.8735C9.88744 23.8735 10.286 24.2672 10.286 24.87ZM12.2644 23.8103V23.3291H11.6519V27.8254H12.3373V26.0123C12.5512 26.2553 12.9109 26.4935 13.4504 26.4935C14.374 26.4935 14.9816 25.7547 14.9816 24.87C14.9816 23.9853 14.3789 23.2464 13.4504 23.2464C12.8769 23.2464 12.5074 23.5138 12.2644 23.8103ZM14.2817 24.87C14.2817 25.4727 13.8831 25.8908 13.3241 25.8908C12.8477 25.8908 12.488 25.5845 12.3422 25.2443V24.4908C12.488 24.1554 12.8477 23.8492 13.3241 23.8492C13.8831 23.8492 14.2817 24.2672 14.2817 24.87ZM18.2092 26.4109V23.3291H17.5238V24.8214C17.3197 24.8991 17.1204 24.938 16.8628 24.938C16.4302 24.938 16.1579 24.8019 16.1579 24.3547V23.3339H15.4726V24.4131C15.4726 25.1908 15.9781 25.5456 16.6683 25.5456C17.0135 25.5456 17.2662 25.4922 17.5287 25.3998V26.4206H18.2092V26.4109ZM18.8752 24.87C18.8752 25.9539 19.6772 26.4935 20.6202 26.4935C21.0528 26.4935 21.4417 26.4157 21.7236 26.2796V25.6866C21.4611 25.813 21.1209 25.9053 20.7466 25.9053C20.1827 25.9053 19.6432 25.672 19.5654 25.1227H21.884C22.0833 24.2283 21.6604 23.2416 20.4306 23.2416C19.721 23.2464 18.8752 23.752 18.8752 24.87ZM21.2716 24.6123H19.5605C19.5849 24.0922 20.0029 23.8152 20.4647 23.8152C21.1452 23.82 21.3105 24.345 21.2716 24.6123ZM22.3847 24.8991C22.3847 25.9977 23.2256 26.4984 24.0471 26.4984C24.4409 26.4984 24.7714 26.4255 25.0679 26.2845V25.6477C24.8249 25.7887 24.4943 25.8859 24.1686 25.8859C23.6145 25.8859 23.0847 25.5699 23.0847 24.87C23.0847 24.1457 23.6388 23.8541 24.1832 23.8541C24.4992 23.8541 24.8151 23.9513 25.0387 24.1117V23.4798C24.7665 23.3194 24.436 23.2416 24.086 23.2416C23.2645 23.2464 22.3847 23.7471 22.3847 24.8991ZM27.1872 26.4109V23.9318H28.2469V23.3291H25.4325V23.9318H26.497V26.4109H27.1872ZM30.5996 26.4109C31.3141 26.4109 31.6155 26.0366 31.6155 25.5651C31.6155 25.1859 31.3773 24.9429 31.0905 24.8505C31.353 24.7339 31.528 24.4908 31.528 24.1506C31.528 23.6693 31.1732 23.3291 30.551 23.3291H28.7913V26.4109H30.5996ZM29.4767 25.1033H30.4489C30.6871 25.1033 30.9252 25.1859 30.9252 25.5019C30.9252 25.7984 30.7211 25.8956 30.4392 25.8956H29.4816V25.1033H29.4767ZM29.4767 23.8492H30.3954C30.6093 23.8492 30.8329 23.9415 30.8329 24.2429C30.8329 24.52 30.6385 24.6172 30.3954 24.6172H29.4767V23.8492ZM34.9355 25.7012V24.5978C34.9355 23.6645 34.3813 23.2464 33.5112 23.2464C33.0154 23.2464 32.5731 23.368 32.33 23.4506V24.0825C32.6071 23.961 32.9862 23.8443 33.4432 23.8443C33.9681 23.8443 34.2549 24.1165 34.2549 24.5005V24.6075C34.0119 24.554 33.7154 24.5151 33.4529 24.5151C32.8113 24.5151 32.0773 24.7582 32.0773 25.5505C32.0773 26.1873 32.5974 26.4935 33.1564 26.4935C33.6376 26.4935 34.0168 26.338 34.3181 26.0949C34.4251 26.3477 34.6535 26.4546 34.9355 26.4546C35.091 26.4546 35.2417 26.4303 35.3729 26.3768V25.881C35.3097 25.9005 35.2368 25.9199 35.1688 25.9199C35.0375 25.9248 34.9355 25.8713 34.9355 25.7012ZM33.5793 25.0012C33.798 25.0012 34.0605 25.0401 34.2452 25.079V25.5991C34.0022 25.8421 33.6813 25.9637 33.3508 25.9637C33.0446 25.9637 32.7724 25.8081 32.7724 25.5067C32.7772 25.1227 33.1904 25.0012 33.5793 25.0012Z" fill="white"></path>
+                </svg>
+              </div>
+            </a>
+
+          </div>
+
+        <!--Кнопки модалок-->
+          <div class="col d-none d-md-block">
+            <ul class="navbar-nav flex-row pr-0">
+              <li class="nav-item dropdown mr-1">
+                <a class="nav-link dropdown-toggle mb-0 mt-0 align-content-center" href="#" data-toggle="dropdown">СОБЫТИЯ</a>
+                <div class="dropdown-menu mb-0 mt-0">
+                  <a class="dropdown-item" href="#">АФИША</a>
+                  <a class="dropdown-item" href="#">ГОЛОСОВАНИЯ</a>
+                  <a class="dropdown-item" href="#">ГАЛЕРЕЯ</a>
+                  <a class="dropdown-item" href="#">НОВОСТИ</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown mr-1">
+                <a class="nav-link dropdown-toggle align-content-center" href="#" data-toggle="dropdown">О НАС</a>
+                <div class="dropdown-menu mb-0 mt-0">
+                  <a class="dropdown-item" href="#">СВЕДЕНИЯ</a>
+                  <a class="dropdown-item" href="#">ИСТОРИЯ</a>
+                  <a class="dropdown-item" href="#">ДОКУМЕНТЫ</a>
+                  <a class="dropdown-item" href="#">ВАКАНСИИ</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle align-content-center" href="#" data-toggle="dropdown">КДУ</a>
+                  <div class="dropdown-menu mb-0 mt-0">
+                  <a class="dropdown-item" href="#">КДУ АО</a>
+                  <a class="dropdown-item" href="#">СПЕЦИАЛИСТАМ</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+            
+
+          <!--Соцсети-->
+          <ul class="d-flex flex-nowrap align-items-center nav nav__social mr-0 ml-auto pr-0 ">
+            <li class="nav-item"><a class="nav-link" href="#" aria-label="Instagram"><img src="/public/instagram.svg"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#" aria-label="YouTube"><img src="/public/youtube.svg"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#" aria-label="VK"><img src="/public/vk.svg"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main container-fluid bg-light p-0 ">
+      <section class="main__poster row no-gutters d-flex flex-md-nowrap">
+        <div class="p-4 p-md--4 col">
+          <h1 class="mx-auto mx-md-0">
+            Большой концерт хореграфического ансамбля «Мы»
+          </h1>
+          <p class="main__ptikets mx-auto mx-md-0">
+            Билеты в кассах АОДНТ ул. Ленина, 167
+          </p>
+          <a class="main__link d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+            <div class="main__more-left d-flex align-items-center justify-content-center">
+              ПОДРОБНЕЕ
+            </div>
+            <div class="main__more-right d-flex align-items-center justify-content-center">
+              <img src="/public/cursor.svg"/>
+            </div>
+          </a>
+        </div>
+        <div class="main_poster-block d-flex col p-0 ml-md-4">
+          <div class="main__poster-image ml-auto">
+            <img src="/public/image 11.jpg"/>
+          </div>
+          <div class="main__squere">
+            <div class="main__date d-flex align-items-center justify-content-center">
+              <p>15.09 18:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__announcements row no-gutters d-flex flex-md-nowrap mb-5">
+        <div class="col px-0">
+          <div class="row announcements main__order align-items-end justify-content-between justify-content-md-center mx-0">
+            <a class="announcements__tel text-dark address__tel" href="tel:+74162777806">
+              <i class="bi bi-telephone"></i> 8(4162) 77 78 06 <span>(касса)</span>
+            </a>
+            <h2 class="m-0">Афиша</h2>
+            <a class="announcements__more address__tel text-nowrap" href="tel:+74162777806">
+              Смотреть всё
+            </a>
+          </div>
+                    <!-- Slider main container -->
+          <div class="swiper swiper1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper1-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper1-slide">
+                <div class="swiper__card" >
+                    <div class="swiper__agelimit d-flex align-items-center justify-content-center">
+                      <p>6+</p>
+                    </div>
+                    <a class="d-flex text-decoration-none" aria-label="Логотип АОДНТ" href="/">
+                      <div class="swiper__ganre d-flex align-items-center justify-content-center">
+                        <p>НАПРАВЛЕНИЕ</p>
+                      </div>
+                    </a>
+                    <h2>Название события</h2>
+                      <img class="swiper__img" src="/public/image 11.jpg"/>
+                    <a class="swiper__link d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+                      <div class="swiper__details d-flex align-items-center justify-content-center">
+                        ПОДРОБНЕЕ
+                      </div>
+                      <div class="swiper__cursor d-flex align-items-center justify-content-center">
+                        <img src="/public/cursor.svg"/>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper1-slide">
+                <div class="swiper__card" >
+                    <div class="swiper__agelimit d-flex align-items-center justify-content-center">
+                      <p>6+</p>
+                    </div>
+                    <a class="d-flex text-decoration-none" aria-label="Логотип АОДНТ" href="/">
+                      <div class="swiper__ganre d-flex align-items-center justify-content-center">
+                          <p>КИНО</p>
+                      </div>
+                    </a>
+                    <h2>К/ф «Маленькие волшебницы»</h2>
+                      <img class="swiper__img" src="/public/image 12.jpg"/>
+                    <a class="swiper__link d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+                      <div class="swiper__details d-flex align-items-center justify-content-center">
+                        ПОДРОБНЕЕ
+                      </div>
+                      <div class="swiper__cursor d-flex align-items-center justify-content-center">
+                        <img src="/public/cursor.svg"/>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper1-slide">
+                <div class="swiper__card" >
+                    <div class="swiper__agelimit d-flex align-items-center justify-content-center">
+                      <p>6+</p>
+                    </div>
+                    <a class="d-flex text-decoration-none" aria-label="Логотип АОДНТ" href="/">
+                      <div class="swiper__ganre d-flex align-items-center justify-content-center">
+                        <p>ВЫСТАВКА</p>
+                      </div>
+                    </a>
+                    <h2>Выставка национально-культурных объединений</h2>
+                      <img class="swiper__img" src="/public/image 13.jpg"/>
+                    <a class="swiper__link d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+                      <div class="swiper__details d-flex align-items-center justify-content-center">
+                        ПОДРОБНЕЕ
+                      </div>
+                      <div class="swiper__cursor d-flex align-items-center justify-content-center">
+                        <img src="/public/cursor.svg"/>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="swiper-slide swiper1-slide">
+                <div class="swiper__card" >
+                    <div class="swiper__agelimit d-flex align-items-center justify-content-center">
+                      <p>6+</p>
+                    </div>
+                    <a class="d-flex text-decoration-none" aria-label="Логотип АОДНТ" href="/">
+                      <div class="swiper__ganre d-flex align-items-center justify-content-center">
+                        <p>НАПРАВЛЕНИЕ</p>
+                      </div>
+                    </a>
+                    <h2>Название события</h2>
+                      <img class="swiper__img" src="/public/image 11.jpg"/>
+                    <a class="swiper__link d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+                      <div class="swiper__details d-flex align-items-center justify-content-center">
+                        ПОДРОБНЕЕ
+                      </div>
+                      <div class="swiper__cursor d-flex align-items-center justify-content-center">
+                        <img src="/public/cursor.svg"/>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar swiper1-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="main__news news row no-gutters">
+           
+          <div class="news__wrapper d-flex">
+            <div class="news__title d-flex justify-content-md-center">
+              <h2 class="m-0">Новости</h2>
+              <a class="news__more" href="#">
+                Смотреть всё
+              </a>
+            </div>
+           </div>     
+
+        <div class="swiper swiper2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper2-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="news__card">
+                  <div class="news__date d-flex align-items-center justify-content-center">
+                    <p>18.01.2021</p>
+                  </div>
+                  <p class="news__description">14 января в Приамурье стартует Всероссийская акция «Онлайн-колядки»</p>
+                </div>
+              </div>
+               <div class="swiper-slide swiper2-slide">
+                <div class="news__card">
+                  <div class="news__date d-flex align-items-center justify-content-center">
+                    <p>18.01.2021</p>
+                  </div>
+                  <p class="news__description">14 января в Приамурье стартует Всероссийская акция «Онлайн-колядки»</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper2-slide">
+                <div class="news__card">
+                  <div class="news__date d-flex align-items-center justify-content-center">
+                    <p>18.01.2021</p>
+                  </div>
+                  <p class="news__description">14 января в Приамурье стартует Всероссийская акция «Онлайн-колядки»</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper2-slide">
+                <div class="news__card">
+                  <div class="news__date d-flex align-items-center justify-content-center">
+                    <p>18.01.2021</p>
+                  </div>
+                  <p class="news__description">14 января в Приамурье стартует Всероссийская акция «Онлайн-колядки»</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper2-slide">
+                <div class="news__card">
+                  <div class="news__date d-flex align-items-center justify-content-center">
+                    <p>18.01.2021</p>
+                  </div>
+                  <p class="news__description">14 января в Приамурье стартует Всероссийская акция «Онлайн-колядки»</p>
+                </div>
+              </div>
+            </div>
+                    <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar swiper2-scrollbar"></div>
+          </div>
+      </section>
+
+       <section class="main__gallery gallery no-gutters row mb-5">
+           <div class="col ">
+              <div class="gallery__wrapper row d-flex">
+                <div class="gallery__title d-flex justify-content-md-center">
+                  <h2 class="m-0">Галерея</h2>
+                  <a class="gallery__more" href="#">
+                    Смотреть всё
+                  </a>
+                </div>
+              </div>     
+
+              <div class="swiper swiper3 row no-gutters d-flex justify-content-start justify-content-md-center">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper3-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper3-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+          
+                
+                </div>
+                        <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar swiper3-scrollbar"></div>
+              </div>
+           </div>
+      </section>
+      
+    </main>
+
+    <footer class="container__fluid">
+       <section class="footer footer__projects projects projects row no-gutters">
+        <div class="swiper swiper4">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper4-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper4-slide">
+                <div class="projects__card">
+                  <img src="/public/picture/projects/image 17.svg">
+                </div>
+              </div>
+               <div class="swiper-slide swiper4-slide">
+                <div class="projects__card">
+                  <img src="/public/picture/projects/image 18.svg">
+                </div>
+              </div>
+              <div class="swiper-slide swiper4-slide">
+                <div class="projects__card">
+                  <img src="/public/picture/projects/image 19.svg">
+                </div>
+              </div>
+              <div class="swiper-slide swiper4-slide">
+                <div class="projects__card">
+                   <img src="/public/picture/projects/image 20.svg">
+                </div>
+              </div>
+              <div class="swiper-slide swiper4-slide">
+                <div class="projects__card">
+                 <img src="/public/picture/projects/image 19.svg">
+              </div>
+            </div>
+                    <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar swiper4-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__about row no-gutters  justify-content-center">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <p class="footer__description">Государственное автономное учреждение культуры Амурской области “Амурский областной Дом народного творчества”</p>
+          <p class="footer__company">SP-Artgroup</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+     
+</body>
+</html>
