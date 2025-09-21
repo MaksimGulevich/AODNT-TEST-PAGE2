@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Muller-B';
+  src: url('/public/fonts/Muller/muller-black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Muller-Black';
   src: url('/public/fonts/Muller/Muller-Trial-Black.ttf') format('truetype');
   font-weight: 900;
@@ -28,7 +35,6 @@
 }
 
 body {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Muller';
@@ -555,7 +561,9 @@ body {
 /* Расписание */
 
 .schedule {
-  margin-left: 15px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
 }
 
@@ -1049,6 +1057,11 @@ body {
 }
 
 /*Блок с UI кнопками*/
+.ui {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .ui__events {
   flex-direction: column;
@@ -1213,19 +1226,26 @@ body {
   background-color: #F84435;
   color: #ffffff;
 }
+.ui__wrapper {
+  margin-bottom: 54px;
+}
 
 .ui__announcement {
   width: 207px;
   height: 78px;
   gap:0 7px;
-  margin: 0 19px 34px 24px;
+  margin: 0 58px 34px 0;
+}
+
+.ui__announcement:last-child {
+  margin-bottom: 0;
 }
 
 .ui__announcementsdate {
   margin-right: 100px;
   width: 97px;
   height: 27px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   background-color: #000000;
   clip-path: polygon(0 0, calc(100% - 13px) 0, 100% 5px, 100% 100%, 0 100%);
   font-family: "Muller-Bold";
@@ -1267,29 +1287,66 @@ body {
   margin: 0;
 }
 
+.ui__announcement:last-child .ui__announcementstime:nth-child(3){
+  background-color: #F84435;
+}
+/* Кнопка подробнее */
 
+.ui__announcementslink {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: 72px;
+  margin-right: 17px;
+}
 
+.ui__announcementslink:last-child {
+  margin-bottom: 0;
+}
 
+.ui__announcementsdetails{
+    width: 112.88px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    clip-path: polygon(0 0, calc(100% - 19.5px) 0, 100% 7px, 100% 100%, 0 100%);
+}
 
+.ui__announcementscursor{
+    width: 46.12px;
+    height:40px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    clip-path: polygon(19.5px 0, 100% 0, 100% 100%, 0 100%, 0 7px);
+}
 
+.ui__announcementsdetails,
+.ui__announcementscursor {
+  font-family: 'Muller-Bold';
+  font-size: 12px;
+}
 
+.ui__announcementslink:last-child .ui__announcementsdetails {
+  background-color: #ffffff;
+  color: #000000;
+}
 
+/*Календарь*/
 
+.ui__calendar {
+  width: 46px;
+  height: 40px;
+  background-color: #000000;
+  margin-bottom: 72px;
+  clip-path: polygon(19.5px 0, 100% 0, 100% 100%, 0 100%, 0 7px);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ui__calendar:last-child {
+  background-color: #F84435;
+  margin-bottom: 0;
+}
 
 
 
@@ -1300,54 +1357,18 @@ body {
   background-color: transparent;
 }
 
-@media (max-width: 1199.98px) { 
-  .main__gallery  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .gallery__wrapper {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 156px;
-}
-
-@media (max-width: 1199.98px) { 
-  .gallery__wrapper {
-    height: 126px;
-  }
-}
-
-
-@media (max-width: 767.98px) { 
-  .gallery__wrapper {
-    height: 83px;
-  }
+  margin-bottom: 24px;
 }
 
 .gallery__title {
   position: relative;
-  width: 100%;
-  margin-top: auto;
-  padding-bottom: 40px;
-  align-items: end;
-}
-
-@media (max-width: 1199.98px) { 
-  .gallery__title {
-    padding-bottom: 48px;
-  }
-}
-
-@media (max-width: 767.98px) { 
-  .gallery__title {
-    margin-left: 10px;
-    padding-bottom: 19px;
-  }
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery__title h2 {
@@ -1356,137 +1377,263 @@ body {
   line-height: 100%;
 }
 
-@media (max-width: 1199.98px) { 
-  .gallery__title h2 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 767.98px) { 
-  .gallery__title h2 {
-    font-size: 24px;
-  }
-}
-
-.gallery__more {
-  position: absolute;
-  right: 1px;
-  font-family: "Muller-Medium";
-  font-size: 14px;
-  text-decoration: none;
-  text-decoration-line: underline;
-  text-underline-offset: 4px;  
-  color: inherit;    
-  font-size: 14px;
-}
-
-@media (max-width: 1199.98px) { 
-  .gallery__more {
-    right: 24px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 767.98px) { 
-  .gallery__more {
-    right: 10px;
-  }
-}
-
-
 .gallery__card {
   width: 400px;
   height: 235px;
 }
-
-@media (max-width: 1199.98px) { 
-  .gallery__card {
-    width: 371.59px;
-    height: 218.31px;
-  }
-}
-
-/* @media (max-width: 767.98px) { 
-  .gallery__card {
-    width: 178.72;
-    height: 105px;
-  }
-} */
 
 .gallery__img {
   width: 100%;
   height: 235px;
 }
 
-@media (max-width: 1199.98px) { 
-  .gallery__img {
-    width: 371.59;
-    height: 218.31px;
-  }
-}
-
-/* @media (max-width: 767.98px) { 
-  .gallery__img { 
-    width: 178.72;
-    height: 210px;
-  }
-} */
-
-
 .swiper3 {
   flex-direction: column;
   height: 278px;
 }
-
-@media (max-width: 1199.98px) { 
-  .swiper3 {
-    height: 233px;
-  }
-}
-
-@media (max-width: 767.98px) { 
-  .swiper3 {
-    width: 100%;
-    height: 233px;
-  }
-    .swiper3-wrapper{
-      height: 233px;
-      margin-left: 0px;
-  }
-} 
 
 .swiper3-slide {
   width: 400px;
   height: 235px;
 }
 
-@media (max-width: 1199.98px) { 
-  .swiper3-slide {
-    width: 371.59px;
-    height: 218.31px;
-  }
-}
-.swiper3 .swiper-scrollbar {
-  --swiper-scrollbar-sides-offset: 0px;
-}
-
-@media (max-width: 1199.98px) { 
-  .swiper3 .swiper-scrollbar {
-    --swiper-scrollbar-sides-offset: 24px;
-  }
-}
-
-@media (max-width: 767.98px) { 
-  .swiper3 .swiper-scrollbar {
-    --swiper-scrollbar-sides-offset: 10px;
-  }
+.gallery_wrapper_scroll {
+  position: relative;
+  width: 1170px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper3-scrollbar {
   background: #E0E0E0;   /* цвет трека */
   height: 10px;          /* толщина полосы */
   border-radius: 0;    /* скругление */
-  margin-bottom: -20px;
+  margin-bottom: 20px;
+}
+
+.swiper3-scrollbar .swiper-scrollbar-drag {
+  height: 10px;
+  top: -3px;
+  background: #000000;
+  border-radius: 0px;
+  cursor: pointer;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%, 0 40%);
+}
+
+
+/* Cвайпер с фильтром*/
+
+.gallery__filtered {
+  margin-bottom: 168px;
+}
+
+.swiper7 {
+  flex-direction: column;
+  height: 278px;
+}
+
+.swiper7-slide {
+  width: 400px;
+  height: 235px;
+}
+
+
+.swiper7-scrollbar .swiper-scrollbar-drag {
+  height: 10px;
+  top: -3px;
+  background: #000000;
+  border-radius: 0px;
+  cursor: pointer;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%, 0 40%);
+}
+
+.swiper7-scrollbar {
+  background: #E0E0E0;   /* цвет трека */
+  height: 10px;          /* толщина полосы */
+  border-radius: 0;    /* скругление */
+  margin-bottom: 20px;
+}
+
+.swiper7-scrollbar .swiper-scrollbar-drag {
+  background: #F84435;
+}
+
+
+.swiper7-slide {
+   filter: grayscale(100%); 
+}
+
+.swiper7-slide:hover {
+     filter: grayscale(0); 
+}
+
+
+
+
+/*Заголовки*/
+
+.titles {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 106px;
+  font-family: "Muller-Black";
+}
+
+.titles h1 {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 27px;
+}
+
+.titles h2 {
+  font-size: 30px;
+  line-height: 100%;
+  margin-bottom: 27px;
+}
+
+.titles h3 {
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 27px;
+}
+
+.titles h4 {
+  font-size: 21px;
+  line-height: 100%;
+  margin-bottom: 27px;
+}
+
+/* Списки */ 
+
+.lists {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 61px;
+}
+
+.lists legend {
+  position: relative;
+  left: -20px;
+  font-family: "Muller-Black";
+  font-size: 21px;
+  line-height: 100%;
+  margin-bottom: 27px;
+}
+
+.lists ul {
+  margin-right: 67px;
+}
+
+.lists fieldset {
+  width: 537px;
+}
+
+.lists ul, .lists  ol {
+  padding: 0;
+}
+
+.lists ol {
+  padding: 0;
+}
+
+.lists ul li {
+  position: relative;
+  list-style: none;
+}
+.lists ul li::before {
+  position: absolute;
+  content: "" ; 
+  top:5px;
+  left: -17px;
+  width: 12px;
+  height: 10px;
+  background-color: #F84435;
+  clip-path: polygon(5px 0, 100% 0, 100% 100%, 0 100% 0 5px);
+}
+
+.lists ol li {
+  padding-left: 19px;
+  list-style-type:decimal;
+}
+
+.lists ol li::marker {
+  list-style-type:decimal;
+  font-family: 'Muller-B';
+  font-weight: bold;
+  color: #F84435;
+}
+
+/* Таблица */ 
+
+.table {
+  position: relative;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 83px;
+  background: #E0E0E0;
+  font-family: 'Muller';
+  font-size: 14px;
+  line-height: 21px;
+  clip-path: polygon(27px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+}
+
+.table table {
+  /* margin-left: 5px; */
+  width: 1160px;
+  clip-path: polygon(27px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+  /* background-color: E0E0E0; */
+}
+
+.table th:first-child {
+  width: 63px;
+}
+
+.table th:nth-child(2) {
+  width: 429px;
+}
+
+.table td:first-child {
+  font-family: "Muller";
+  font-weight: 400;
+  width: 63px;
+}
+
+.table td:nth-child(2) {
+  width: 429px;
+}
+
+.table th,
+.table td {
+  background-color: #F8F9FA;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #F8F9FA;
+  font-weight: bold;
+}
+
+.table td:first-child {
+  text-align: center;
+}
+
+.table {
+  border: 5px solid #E0E0E0;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.table::before {
+  content: "";
+  position: absolute;
+  top: -2px; left: -2px;   /* выравниваем по рамке */
+  border-top: 20px solid E0E0E0;  /* заливка угла */
+  border-right: 20px solid transparent; /* диагональ */
 }
 
 

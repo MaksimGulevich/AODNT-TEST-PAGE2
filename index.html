@@ -680,7 +680,8 @@
         </div>
       </div>  
     </div>
-    <div>
+    <div class="ui__wrapper d-flex align-items-end">
+      <div>
       <div class="ui__announcement d-flex flex-wrap">
         <div class="ui__announcementsdate d-flex align-items-center justify-content-center">
           <p>28.01.2021</p>
@@ -710,25 +711,35 @@
         </div>            
       </div>
     </div>
+    <div>
+      <button class="ui__announcementslink d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+        <div class="ui__announcementsdetails d-flex align-items-center justify-content-center">
+          ПОДРОБНЕЕ
+        </div>
+        <div class="ui__announcementscursor d-flex align-items-center justify-content-center">
+          <img src="/public/cursor.svg"/>
+        </div>
+      </button>
+      <button class="ui__announcementslink d-flex text-decoration-none justify-content-center justify-content-md-start" aria-label="Логотип АОДНТ" href="#">
+        <div class="ui__announcementsdetails d-flex align-items-center justify-content-center">
+          ПОДРОБНЕЕ
+        </div>
+        <div class="ui__announcementscursor d-flex align-items-center justify-content-center">
+          <img src="/public/cursor.svg"/>
+        </div>
+      </button>
+    </div>
+    <div>
+      <div class="ui__calendar d-flex align-items-center justify-content-center"><img src="/public/picture/icons/Group.svg" alt="Календарь"></div>
+      <div class="ui__calendar d-flex align-items-center justify-content-center"><img src="/public/picture/icons/Group.svg" alt="Календарь"></div>
+    </div>
+    </div>
   </section>
-
-
-
-
-
-     
-
-      
-     
-
-       <section class="main__gallery gallery no-gutters row mb-5">
+  <section class="main__gallery gallery no-gutters row">
            <div class="col gallery__container ">
               <div class="gallery__wrapper row d-flex">
-                <div class="gallery__title d-flex justify-content-md-center">
+                <div class="gallery__title d-flex justify-content-start">
                   <h2 class="m-0">Галерея</h2>
-                  <a class="gallery__more" href="#">
-                    Смотреть всё
-                  </a>
                 </div>
               </div>     
 
@@ -788,10 +799,160 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-scrollbar swiper3-scrollbar"></div>
+              <div class="gallery_wrapper_scroll">
+                <div class="swiper-scrollbar swiper3-scrollbar"></div>
+              </div>
            </div>
       </section>
-      
+       <section class="main__gallery gallery gallery__filtered no-gutters row">
+           <div class="col gallery__container ">
+              <div class="gallery__wrapper row d-flex">
+                <div class="gallery__title d-flex justify-content-start">
+                  <h2 class="m-0">Галерея</h2>
+                </div>
+              </div>     
+
+              <div class="swiper swiper7 ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper7-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper7-slide">
+                    <div class="gallery__card">
+                      <img class="gallery__img" src="/public/picture/gallery/image 1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery_wrapper_scroll">
+                <div class="swiper-scrollbar swiper7-scrollbar"></div>
+              </div>
+           </div>
+      </section>
+      <section class="main_titles titles">
+        <h1>H1 Заголовок</h1>
+        <h2>H2 Заголовок</h2>
+        <h3>H3 Заголовок</h3>
+        <h4>H4 Заголовок</h4>
+      </section>
+      <section class="main__lists lists row">
+        <fieldset>
+          <legend>Список маркерованный</legend>
+        <ul>
+          <li>
+            Сквер Амурского областного Дома народного творчества украсят работы участников Четвёртого конкурса ледовых скульптур «Волшебный лёд Амура».
+          </li>
+          <li>
+            Восемь команд будут создавать своеобразные ледовые открытки, посвящённые теме Нового года, или Праздника весны, по китайскому календарю. (В этом году он отмечается с 12 по 18 февраля.)
+          </li>
+          <li>
+            Воспитанники Художественной школы города Благовещенска и участники творческих коллективов АОДНТ будут создавать ледовые шедевры под руководством Алексея Сидорова, члена АРОО «Творческий Союз художников».
+          </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Список маркерованный</legend>
+        <ol>
+          <li>
+           Сквер Амурского областного Дома народного творчества украсят работы участников Четвёртого конкурса ледовых скульптур «Волшебный лёд Амура».
+          </li>
+          <li>
+            Восемь команд будут создавать своеобразные ледовые открытки, посвящённые теме Нового года, или Праздника весны, по китайскому календарю. (В этом году он отмечается с 12 по 18 февраля.)
+          </li>
+          <li>
+            Воспитанники Художественной школы города Благовещенска и участники творческих коллективов АОДНТ будут создавать ледовые шедевры под руководством Алексея Сидорова, члена АРОО «Творческий Союз художников».
+          </li>
+        </ol>
+        </fieldset>
+      </section>
+      <section class="main__table table">
+        <table>
+          <tr>
+            <th>№</th>
+            <th>Название поля</th>
+            <th>Описание</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Мероприятие посвященное детям</td>
+            <td>Мероприятие посвященное детям. Мероприятие посвященное детям.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Мероприятие посвященное детям</td>
+            <td>Мероприятие посвященное детям. Мероприятие посвященное детям.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Мероприятие посвященное детям</td>
+            <td>Мероприятие посвященное детям. Мероприятие посвященное детям.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Мероприятие посвященное детям</td>
+            <td>Мероприятие посвященное детям. Мероприятие посвященное детям.</td>
+          </tr>
+        </table>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
     <footer class="container__fluid">

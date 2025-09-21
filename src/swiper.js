@@ -32,37 +32,29 @@ const swiper2 = new Swiper('.swiper2', {
 const swiper3 = new Swiper('.swiper3', {
   // Optional parameters
   direction: 'horizontal',
-  centeredSlides: true, 
+  loop: false,
   slidesPerView: 'auto',          // сколько слайдов видно за раз
   spaceBetween: 0,  
-  grid: {rows:2, fill: 'row'},
   // And if we need scrollbar
    scrollbar: {
     el: '.swiper3-scrollbar',
     draggable: true,   
     dragSize: 20, 
-  },
- breakpoints: {
-    320: {
-      loop: true,
-      slidesPerView: 2,
-      grid: { rows: 2, },
-      
-    },
-    768: {   
-      loop: true,
-      spaceBetween: 0,                      // если нужно — средний размер
-      slidesPerView: 'auto',
-      grid: {rows:1, fill: 'row'}, // явно ставим 1 строку
-    },
-    1200: {   
-      loop: true,
-      spaceBetween: 0,                      // если нужно — средний размер
-      slidesPerView: 'auto',
-      grid: {rows:1, fill: 'row'}, // явно ставим 1 строку
-    },
-  },
-  
+  }, 
+});
+
+const swiper7 = new Swiper('.swiper7', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 'auto',          // сколько слайдов видно за раз
+  spaceBetween: 0,  
+  // And if we need scrollbar
+   scrollbar: {
+    el: '.swiper7-scrollbar',
+    draggable: true,   
+    dragSize: 20, 
+  }, 
 });
 
 
