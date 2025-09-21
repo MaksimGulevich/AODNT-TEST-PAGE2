@@ -2,27 +2,14 @@ const swiper1 = new Swiper('.swiper1', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
-  slidesPerView: 'auto',          // сколько слайдов видно за раз
-  spaceBetween: 30,          // отступы между слайдами (px)
+  slidesPerView: 2,          // сколько слайдов видно за раз
+  spaceBetween: 18,          // отступы между слайдами (px)
 
   // And if we need scrollbar
    scrollbar: {
-    el: '.swiper1-scrollbar',
     draggable: true,   
     dragSize: 20,    
   },
-
-    breakpoints: {
-    300: {
-      spaceBetween: 20,
-      enabled: true,
-    },
-    1200: {
-      spaceBetween: 30,
-      enabled: false,
-    },
-  },
-
 });
 
 
@@ -30,24 +17,13 @@ const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
-  slidesPerView: 'auto',          // сколько слайдов видно за раз
-  spaceBetween: 20,          // отступы между слайдами (px)
+  slidesPerView: 2,          // сколько слайдов видно за раз
+  spaceBetween: 30,          // отступы между слайдами (px)
 
   // And if we need scrollbar
    scrollbar: {
-    el: '.swiper2-scrollbar',
     draggable: true,   
     dragSize: 20, 
-  },
-
-  // Breakpoints
-  breakpoints: {
-    300: {
-      spaceBetween: 20,
-    },
-    1200: {
-      spaceBetween: 30,
-    },
   },
 
 });

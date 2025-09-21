@@ -4,32 +4,32 @@
     if (swiper1) {
         swiper1.addEventListener('click', function(event) {
 
-            const button = event.target.closest('.swiper__link');
-            const close = event.target.closest('.swiper__close');
+            const button = event.target.closest('.shedule__announcementslink');
+            const close = event.target.closest('.shedule__announcementsclose');
             
 
             if (button || close) {          
                
                 
                 if(button){
-                    const card = button.closest('.swiper__card');
+                    const card = button.closest('.shedule__announcementscard');
                     const slide = button.closest('.swiper1-slide')
-                    const cardInfo = slide.querySelector('.swiper__card-info')
+                    const cardInfo = slide.querySelector('.shedule__announcementscard-info')
                     if (card) {
-                        card.classList.add('swiper__card-hidden');
-                        cardInfo.classList.remove('swiper__card-hidden')
+                        card.classList.add('shedule__announcementscard-hidden');
+                        cardInfo.classList.remove('shedule__announcementscard-hidden')
                     } else {
                         return
                     }
                 }
 
                 if(close){
-                    const cardInfo = close.closest('.swiper__card-info')
+                    const cardInfo = close.closest('.shedule__announcementscard-info')
                     const slide = close.closest('.swiper1-slide')
-                    const card = slide.querySelector('.swiper__card');
+                    const card = slide.querySelector('.shedule__announcementscard');
                     if (cardInfo) {
-                        cardInfo.classList.add('swiper__card-hidden');
-                        card.classList.remove('swiper__card-hidden')
+                        cardInfo.classList.add('shedule__announcementscard-hidden');
+                        card.classList.remove('shedule__announcementscard-hidden')
                     } else {
                         return
                     }
