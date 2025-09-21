@@ -37,7 +37,7 @@ body {
 /*Стили для первой строки навигации(кнокпи)*/
 
 .header__address{
-    max-width: 1200px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -85,10 +85,45 @@ body {
   height: 16px;
 }
 
-.address__eye img {
-  width: 24px;
-  height: 13px;
+.hover-eye {
+    position: relative;
+    width: 24px;
+    height: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
+
+.hover-eye::before,
+.hover-eye::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 13px;
+    transition: opacity 0.3s ease;
+}
+
+.hover-eye::before {
+    background: url('/public/eye\ 1.svg') center/cover;
+    opacity: 1;
+}
+
+.hover-eye::after {
+    background: url('/public/eye\ 2.svg') center/cover;
+    opacity: 0;
+}
+
+.hover-eye:hover::before {
+    opacity: 0;
+}
+
+.hover-eye:hover::after {
+    opacity: 1;
+}
+
+
 
 
 
@@ -146,7 +181,7 @@ body {
 
 
   .menu {
-    max-width: 1200px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -323,36 +358,162 @@ body {
   padding: 2px;
 }
 
+.hover-vk,
+.hover-youtube,
+.hover-instagram {
+    position: relative;
+    width: 24px;
+    height: 13.69px;
+    overflow: hidden;
+}
+
+.hover-youtube {
+  width: 20.26px;
+  height: 24px;
+}
+
+.hover-instagram {
+  height: 24px;
+}
+
+.hover-vk::before,
+.hover-vk::after,
+.hover-youtube::before,
+.hover-youtube::after,
+.hover-instagram::before,
+.hover-instagram::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 13.69px;;
+    transition: opacity 0.2s ease;
+}
+
+.hover-youtube::before,
+.hover-youtube::after {
+  width: 20.26px;
+  height: 24px;
+}
+
+.hover-instagram::before,
+.hover-instagram::after {
+  height: 24px;
+}
+
+.hover-vk::before {
+    background: url('/public/picture/icons/vk\ dark.svg') center/cover;
+    opacity: 1;
+}
+
+.hover-vk::after {
+    background: url('/public/vk.svg') center/cover;
+    opacity: 0;
+}
+
+.hover-youtube::before {
+    background: url('/public/picture/icons/youtube\ dark.svg') center/cover;
+    opacity: 1;
+}
+
+.hover-youtube::after {
+    background: url('/public/youtube.svg') center/cover;
+    opacity: 0;
+}
+
+.hover-instagram::before {
+    background: url('/public/picture/icons/instagram\ dark.svg') center/cover;
+    opacity: 1;
+}
+
+.hover-instagram::after {
+    background: url('/public/instagram.svg') center/cover;
+    opacity: 0;
+}
+
+
+
+
+.hover-vk:hover::before,
+.hover-youtube:hover::before,
+.hover-instagram:hover::before {
+    opacity: 0;
+}
+
+.hover-vk:hover::after,
+.hover-youtube:hover::after,
+.hover-instagram:hover::after {
+    opacity: 1;
+}
+
+
+
+
+
 /* Главное содержимое*/
 
 /* Главная афиша */
 
-.main__poster {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 67px;
-  position: relataive;
-  background-color: #FFFFFF;
-  overflow: hidden;
-}
+/* Скроллбар кастомный для карточки расписания*/
 
-@media (max-width: 1199.98px) { 
-  .main__poster{
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 42px;
-  }
+.swiper6-wrapper {
+  max-height: 350px;
 }
 
 @media (max-width: 767.98px) { 
-  .main__poster{
-    margin-left: 0px;
-    margin-right: 0px;
+  .swiper6-wrapper {
+  max-height: 600px;
+  } 
+}
+
+/* Стили для пагинации */
+
+.swiper-pagination-bullet {
+  background-color: #EEEEEE;
+  opacity: 0.75;
+  border-radius: 0;
+  width: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000000;
+  border-radius: 0;
+  width: 10px;
+}
+
+
+.poster__wrapper {
+  max-width: 1170px;
+  /* max-height: 350px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 67px;
+}
+
+@media (max-width: 1199.98px) { 
+  .poster__wrapper{
+    /* max-height: 600px; */
+    margin-left: 24px;
+    margin-right: 24px;
     margin-bottom: 40px;
   }
 }
 
+@media (max-width: 767.98px) { 
+  .poster__wrapper{
+    max-height: 600px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+.main__poster {
+  position: relataive;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
 
 .main__poster h1 {
   background-color: #FFFFFF;
@@ -448,7 +609,7 @@ body {
 
 @media (max-width: 767.98px) { 
   .main__squere {
-   left: 0;
+   left: 15px;
   }
 }
 
@@ -462,7 +623,7 @@ body {
   font-size: 36px;
   line-height: 40px;
   color: #fff;
-  clip-path: polygon(0 20%, 20% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 19px, 37px 0, 100% 0, 100% 100%, 0 100%);
 }
 
 @media (max-width: 1199.98px) { 
@@ -470,19 +631,28 @@ body {
    width: 128px;
    height: 84px;
    font-size: 24px;
+  clip-path: polygon(0 13px, 26px 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
 .main__date p{
-  width: 104px;
+  text-align: center;
+  line-height: 100%;
   margin: 0;
   padding: 0;                 /* убрать стандартные отступы <p> */
+}
+
+@media (max-width: 1199.98px) { 
+  .main__date p{
+    margin: 0;
+    padding: 0;                 /* убрать стандартные отступы <p> */
+  }
 }
 
 /* Расписание и анонсы*/
 
 .main__announcements {
-  max-width: 1200px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -502,6 +672,7 @@ body {
 }
 
 
+
 .swiper__card {
   position: relative;
   display: flex;
@@ -509,31 +680,230 @@ body {
   width: 270px;
   height: 436px;
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 113.1px), calc(100% - 10px) calc(100% - 88.1px), 100% calc(100% - 63.1px), 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 121px), calc(100% - 10px) calc(100% - 96px), 100% calc(100% - 71px), 100% 100%, 0 100%);
 }
 
 @media (max-width: 1199.98px) { 
   .swiper__card {
     width: 227px;
     height: 366px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 102px), calc(100% - 8.5px) calc(100% - 80px), 100% calc(100% - 58px), 100% 100%, 0 100%);
 }
+}
+
+.swiper__image{
+   margin-bottom: 27.87px;
+   clip-path: polygon(71px 0, 100% 0, 100% 100%, 0 110%, 0 46px);
 }
 
 .swiper__img {
   width: 270px;          /* всегда равна ширине контейнера */
   height: 165px;        /* фиксируем высоту (любая по дизайну) */
-  margin-bottom: 27.87px;
-  clip-path: polygon(71px 0, 100% 0, 100% calc(100% - 25px), calc(100% - 10px) 100%, 0 110%, 0 46px);
 }
 
 @media (max-width: 1199.98px) { 
+
+  .swiper__image{
+    margin-bottom: 19.97px;
+    clip-path: polygon(60px 0, 100% 0, 100% 100%, 0 110%, 0 39px);
+}
+
  .swiper__img {
     width: 227px;          /* всегда равна ширине контейнера */
     height: 139px;        /* фиксируем высоту (любая по дизайну) */
-    margin-bottom: 19.97px;
-    clip-path: polygon(71px 0, 100% 0, 100% calc(100% - 25px), calc(100% - 10px) 100%, 0 110%, 0 46px);
   }
 }
+
+/* Скрытая карточка с расписанием */
+
+.swiper__card-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 436px;
+  background-color: #000000;
+  clip-path: polygon(0 0, 100% 0, 100%  100%, 0 100% ,  0 266px, 10px 240px, 0 214px, 0 110px, 10px 84px,0 58px );
+}
+.swiper__card-hidden{
+  position: absolute;
+  visibility: hidden;             
+}
+
+@media (max-width: 1199.98px) { 
+  .swiper__card-info {
+    width: 227px;
+    height: 366px;
+    clip-path: polygon(0 0, 100% 0, 100%  100%, 0 100% ,  0 266px, 10px 240px, 0 214px, 0 110px, 10px 84px,0 58px );
+}
+}
+
+.swiper__card-info h2 {
+  font-family: "Muller-Black";
+  font-size: 21px;
+  line-height: 100%;
+  margin: 33px 0 24px 24px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1199.98px) { 
+  .swiper__card h2 {
+    font-size: 18px;
+    margin-left: 14px;
+    line-height: 100%;
+  }
+}
+
+.swiper__close {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 45px;
+  height: 39px;
+  background-color: #FFFFFF;
+  font-family: "Muller-Black";
+  font-size: 16px;
+  color: #000000;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 19px 100%, 0 calc(100% - 7px));
+}
+
+.swiper__close::before {
+  position: absolute;
+  right: 23.25px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
+}
+
+.swiper__close::after {
+  position: absolute;
+  left: 23.25px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;;
+}
+
+.swiper__announcement {
+  gap:0 16px;
+  margin: 0 19px 0 24px;
+}
+
+@media (max-width: 1199.98px) { 
+  .swiper__announcement {
+    gap:0 14px;
+    margin: 0 19px 0px 24px;
+  }
+}
+
+.swiper__date {
+  margin-right: 100px;
+  width: 97px;
+  height: 27px;
+  margin-bottom: 24px;
+  background-color: #F4F4F4;
+  clip-path: polygon(0 0, calc(100% - 13px) 0, 100% 5px, 100% 100%, 0 100%);
+  font-family: "Muller-Bold";
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+@media (max-width: 1199.98px) { 
+  .swiper__date {
+  width: 86px;
+  font-size: 12px;
+  }
+}
+
+.swiper__date p {
+  margin: 0;
+}
+
+.swiper__time {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  color: #FFFFFF;
+  font-family: "Muller-Black";
+  font-size: 14px;
+  line-height: 100%;
+  clip-path: polygon(0 0, calc(100% - 13px) 0, 100% 5px, 100% 100%, 0 100px);
+}
+
+.swiper__time::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 2px;
+  top: 2px;
+  width: 60px;
+  height: 28px;
+  background-color: #000000;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 4.5px, 100% 100%, 0 100px);
+}
+
+.swiper__time:hover::after {
+  background-color: #F84435;
+}
+
+.swiper__time p {
+  margin: 0;
+}
+
+
+/* Скроллбар кастомный для карточки расписания*/
+
+.swiper5 {
+  margin: 0;
+}
+
+/* Cкроллбар */
+.swiper5-slide { 
+  width: 227px;
+  height:auto;
+}
+
+@media (max-width: 1199.98px) { 
+  .swiper5-wrapper {
+    height: 340px;
+  }
+}
+
+.swiper5-scrollbar {
+  background: #4F4F4F;   /* цвет трека */
+  border-radius: 0;    /* скругление */
+  margin-right: 17px;
+}
+
+
+
+/* Бегунок */
+
+.swiper5-scrollbar .swiper-scrollbar-drag {
+
+  width: 10px;;
+  left: -3px;
+  background: #ffffff;
+  border-radius: 0px;
+  cursor: pointer;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%, 0 40%);
+}
+
+
+.swiper5 .swiper-scrollbar-vertical {
+  height: calc(100% - 40px) !important;
+  top: 20px !important;
+}
+
+
+
 
 
 /* Cкроллбар */
@@ -563,7 +933,9 @@ body {
 
 /* Бегунок */
 
-.swiper-scrollbar-drag {
+ .swiper1-scrollbar .swiper-scrollbar-drag,
+ .swiper2-scrollbar .swiper-scrollbar-drag,
+ .swiper3-scrollbar .swiper-scrollbar-drag {
   height: 10px;
   top: -3px;
   background: #000000;
@@ -683,9 +1055,13 @@ body {
 /* Свайпер афишы */ 
 
 @media (max-width: 1199.98px) {
-  .swiper1-wrapper {
-    justify-content: center;
+ .swiper1 {
+   padding-left: auto;
   }
+
+  /* .swiper1-wrapper {
+    justify-content: center;
+  } */
 }
 
 .swiper__ganre {
@@ -734,9 +1110,18 @@ body {
 /* Кнопка подробнее */
 
 .swiper__link {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28.13px;
+}
+
+@media (max-width: 1199.98px) {
+  .swiper__link {
+    margin-bottom: 20px;
+  }
 }
 
 .swiper__details{
@@ -765,7 +1150,7 @@ body {
 
 @media (max-width: 1199.98px) { 
   .swiper1 .swiper-scrollbar {
-    --swiper-scrollbar-sides-offset: 24px;
+    --swiper-scrollbar-sides-offset: 0px;
   }
 }
 
@@ -791,18 +1176,14 @@ body {
   }
 }
 
-.news__wrapper {
-  height: 157px;
-}
 
-@media (min-width: 1199.98px) {
+
   .news__wrapper {
-    width: 100%;
-    max-width: 1200px;
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    height: 157px;
   }
-}
 
 @media (max-width: 1199.98px) { 
   .news__wrapper {
@@ -970,6 +1351,7 @@ body {
 }
 
 .swiper2 {
+  max-width: 1170px;
   height: 350px;
 }
 
@@ -1210,10 +1592,10 @@ body {
   .swiper3 {
     width: 100%;
     height: 233px;
+  }
     .swiper3-wrapper{
       height: 233px;
       margin-left: 0px;
-}
   }
 } 
 
@@ -1228,15 +1610,6 @@ body {
     height: 218.31px;
   }
 }
-/* 
-@media (max-width: 767.98px) { 
-  .swiper3-slide {
-    width: 100%;
-    height: 210;
-  }
-} */
-
-
 .swiper3 .swiper-scrollbar {
   --swiper-scrollbar-sides-offset: 0px;
 }
@@ -1262,15 +1635,12 @@ body {
 
 
 
-
-
-
-
-
 /* Раздел проекты */ 
 
 .footer__projects {
   display: flex;
+  padding-top: 63px;
+  padding-bottom: 59px;
   flex-direction:column;
   background-color: #ffffff;
   height: 232px;
@@ -1279,8 +1649,9 @@ body {
 @media (max-width: 1199.98px) { 
   .footer__projects  {
     display: block;
-    margin-left: 0px;
-    margin-right: 0px;
+    height: 324px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1292,6 +1663,11 @@ body {
     padding-bottom: 29.52px;
     height: 179px;
   }
+}
+
+
+.footer__wrapper {
+  width: auto;
 }
 
 .projects__card {
@@ -1342,13 +1718,14 @@ body {
 }
 
 .swiper4 {
-  width: 1200px;
+  width: 1170px;
   height: 350px;
 }
 
 @media (max-width: 1199.98px) { 
   .swiper4 {
-    height: 292px;
+    width: 560px;
+    height: 244px;
   }
 }
 
@@ -1361,23 +1738,9 @@ body {
 
 @media (min-width: 1199.98px) { 
   .swiper4-wrapper{
-    width: 100%;
-    max-width: 1200px;
     margin-left: 0;
     margin-right: 0;
   }
-}
-
-@media (max-width: 1199.98px) { 
-  .swiper4-wrapper{
-    margin-left: 24px;
-  }  
-}
-
-@media (max-width: 767.98px) { 
-  .swiper4-wrapper{
-  margin-left: 0;
-  }  
 }
 
 .swiper4-slide {
@@ -1403,6 +1766,84 @@ body {
     height: auto;
   }
 }
+
+
+/* Настройки кнопок next и prev*/
+
+ .footer__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-nav {
+    position: relative;
+    top: -280px;
+  }
+
+@media (min-width: 1199.98px) { 
+    .swiper-nav {
+      display: none;
+  }
+}
+
+
+@media (min-width: 1230px) { 
+    .swiper-nav {
+      display: block;
+  }
+   .footer__wrapper {
+      width: 1210px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 1199.98px) { 
+  .footer__wrapper {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-nav {
+    position: relative;
+    top: -110px;
+  }
+}
+
+
+@media (max-width: 767.98px) { 
+  .footer__wrapper {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-nav {
+    position: relative;
+    top: -45px;
+  }
+}
+
+.swiper-button-prev {
+    color: #000000; /* Цвет иконки */
+    width: 15px; /* Ширина кнопки */
+    height: 15px; /* Высота кнопки */
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(45deg);
+}
+
+.swiper-button-next {
+    color: #000000; /* Цвет иконки */
+    width: 15px; /* Ширина кнопки */
+    height: 15px; /* Высота кнопки */
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    transform: rotate(45deg);
+}
+
+
 
 
 /* Футер*/
@@ -1452,4 +1893,7 @@ body {
 
 
 }
+
+
+
 
