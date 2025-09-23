@@ -35,6 +35,7 @@
 }
 
 body {
+   min-width: 1210px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Muller';
@@ -1068,7 +1069,7 @@ body {
 }
 
 .ui__socials ul:first-child .ui__vk::before {
-    background: url('/public/picture/icons/vk\ dark.svg') center/cover;
+    background: url('/public/picture/icons/vkdark.svg') center/cover;
     opacity: 1;
 }
 
@@ -1078,7 +1079,7 @@ body {
 }
 
 .ui__socials ul:first-child .ui__youtube::before {
-    background: url('/public/picture/icons/youtube\ dark.svg') center/cover;
+    background: url('/public/picture/icons/youtubedark.svg') center/cover;
     opacity: 1;
 }
 
@@ -1088,7 +1089,7 @@ body {
 }
 
 .ui__socials ul:first-child .ui__instagram::before {
-    background: url('/public/picture/icons/instagram\ dark.svg') center/cover;
+    background: url('/public/picture/icons/instagramdark.svg') center/cover;
     opacity: 1;
 }
 
@@ -1535,7 +1536,9 @@ body {
 
 /* Раздел проекты */ 
 
+
 .footer__projects {
+    min-width: 1210px;
   display: flex;
   padding-top: 63px;
   padding-bottom: 59px;
@@ -1633,17 +1636,21 @@ body {
 
 /* Футер*/
 
-
 .footer__about {
-  height: 45px;
+  min-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 45px;
+  height:auto;
   background-color: #000000;
   font-family: 'Muller';
   font-size: 12px;
   color: #ffffff;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .footer__about div {
+  text-wrap-mode: nowrap;
   width: 1170px
 }
 
@@ -1652,8 +1659,4 @@ body {
 .footer__company {
     margin: 0;
   }
-
-
-
-
 

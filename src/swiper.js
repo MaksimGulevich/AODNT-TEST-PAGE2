@@ -63,7 +63,7 @@ const swiper4 = new Swiper('.swiper4', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
-  slidesPerView: 'auto',          // сколько слайдов видно за раз
+  slidesPerView: 4,          // сколько слайдов видно за раз
   spaceBetween: 20, 
   
     navigation: {
@@ -71,19 +71,6 @@ const swiper4 = new Swiper('.swiper4', {
         prevEl: '.swiper-button-prev',
     },
 
-  // Breakpoints
-  breakpoints: {
-    300: {
-      spaceBetween: 0,
-      slidesPerView: 2,
-      grid: { rows: 2, fill: 'row'},
-    },
-    1200: {
-      spaceBetween: 20,
-      slidesPerView: 4,
-      grid: {rows:1, fill: 'row'},
-    },
-  },
 });
 
 
