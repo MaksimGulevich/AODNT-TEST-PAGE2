@@ -258,14 +258,22 @@ body {
   /* Способ A: clip-path (проще всего) */
    clip-path: polygon(0 0, 140px 0, 100% 20px, 100% 100%, 0 100%);
 }
-
+/* 
 .nav__social {
   justify-content: space-between;
   width: 116px;
+} */
+
+/* .nav__social a{
+  padding: 2px;
+} */
+
+.hover-instagram {
+  margin-right: 24px;
 }
 
-.nav__social a{
-  padding: 2px;
+.hover-youtube {
+  margin-right: 24px;
 }
 
 .hover-vk,
@@ -1029,6 +1037,14 @@ body {
   padding: 2px;
 }
 
+.ui__instagram {
+  margin-right: 24px;
+}
+
+.ui__youtube {
+  margin-right: 24px;
+}
+
 .ui__vk,
 .ui__youtube,
 .ui__instagram {
@@ -1577,7 +1593,6 @@ body {
 
 .swiper4 {
   width: 1170px;
-  height: 350px;
 }
 
 .swiper4-slide {
@@ -1600,7 +1615,7 @@ body {
 
   .swiper-nav {
     position: relative;
-    top: -280px;
+    top: -40px;
   }
 
     .swiper-nav {
